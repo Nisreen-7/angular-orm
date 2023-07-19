@@ -9,7 +9,7 @@ import { switchMap } from 'rxjs';
   selector: 'app-promo',
   templateUrl: './promo.component.html',
   styleUrls: ['./promo.component.css']
-})
+})  
 export class PromoComponent implements OnInit{
   promo?:Promo;
   constructor(private route:ActivatedRoute, private studentService:StudentService, private promoService:PromoService) {}
