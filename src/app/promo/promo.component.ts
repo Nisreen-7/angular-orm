@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { StudentService } from '../student.service';
 import { PromoService } from '../promo.service';
-import { Promo } from '../entities';
+import { Promo } from '../entities'; 
 import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-promo',
   templateUrl: './promo.component.html',
   styleUrls: ['./promo.component.css']
-})  
+})
 export class PromoComponent implements OnInit{
   promo?:Promo;
   constructor(private route:ActivatedRoute, private studentService:StudentService, private promoService:PromoService) {}
