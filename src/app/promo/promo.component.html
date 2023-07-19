@@ -1,0 +1,14 @@
+<p *ngIf="!promo">Loading...</p>
+
+<div *ngIf="promo">
+    <h1>{{promo.name}}</h1>
+    <p>Cursus : {{promo.cursus}}</p>
+    <p>Dates : {{promo.startDate|date:'dd/MM/yyyy'}} to {{promo.endDate|date:'dd/MM/yyyy'}}</p>
+    <p>Student count : {{promo.students.length}}</p>
+
+    <ul>
+        <li *ngFor="let student of promo.students">
+            {{student.name}}
+        </li>
+    </ul>
+</div>
